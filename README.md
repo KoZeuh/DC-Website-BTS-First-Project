@@ -6,8 +6,6 @@
 
 <h2 align="center"> Site Web - DC </h2>
 <h4 align="center"> Ce projet est une réalisation de site web d'une "pseudo-entreprise" selon un cahier des charges. (1er TP du BTS SIO 1ère année) <h4>
-
-## Contributeur Kixov- [Profil Github](https://github.com/Kixov)
   
 ## :fire: Fonctionnalités Site Web
 
