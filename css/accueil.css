@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body, html{
+    background-image: url(../img/image.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+
+    background: rgba(0, 122, 138, 0.87);
+    height: 100%;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    background: rgba(0, 233, 250, 0.137);
+}
+
+header h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+header li{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header li:hover{
+    color: rgb(0, 217, 255);
+    text-shadow: rgba(0, 0, 0, 0.445) 0px 0px 5px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+.text_button{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text_button h1{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.text_button h2{
+    margin: 0;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.text_button .button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.text_button button{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background: none;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.text_button button:hover{
+    background: white;
+    color: rgb(1, 148, 173);
+}
+
+.footer{
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 233, 250, 0.137);
+    height: 5%;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    animation: ee .3s ;
+}
+
+@keyframes ee{
+    from{height: 0;}
+    to{height: 100%;}
+}
+
+.overlay_body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloc{
+    background: rgb(255, 255, 255);
+    box-shadow: black 0px 0px 10px;
+    height: 70%;
+    width: 30%;
+}
+
+.fermer{
+    height: 5%;
+    background: rgb(22, 72, 95);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-fermer{
+    color: white;
+    height: 100%;
+    width: 20%;
+    background: rgb(22, 92, 95);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-fermer:hover{
+    background: rgb(11, 48, 49);
+
+}
+
+.icon_presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.icon_presentation img{
+    height: 90%;
+}
+
+.nom_dc{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.nom_dc h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(6, 208, 238);
+    margin: 0;
+    padding-left: 25px;
+}
+
+.description{
+    height: 51%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar
+{
+	background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(22, 72, 95);
+    border-radius: 50px;
+}
+
+.description p{
+    margin: 0;
+    color: rgb(6, 208, 238);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.coord{
+    background: rgb(22, 72, 95);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+}
+            
+.title h1{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(6, 208, 238);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.icon{
+    margin: 5px;
+    width: 10%;
+    height: 40%;
+    cursor: pointer;
+
+}
+
+.icon img{
+    height: 100%;
+    
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 0px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content img{
+    height: 20%;
+    width: 20%;
+}
+
+.dropdown-content p{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(163, 163, 163);
+}
+
+.triangle{
+    position: absolute;
+    left: 50px;
+    bottom: -15px;
+    border-top : 17px solid rgb(255, 255, 255);
+    border-right : 10px solid transparent;
+    border-left : 10px solid transparent;
+    z-index: 1;
+}
+
+.dropup_adresse{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    bottom: 90%;
+    right: 75.5%;
+    display: none;
+    animation: up .3s ;
+}
+.dropup_mail{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    bottom: 90%;
+    right: 51%;
+    animation: up .3s ;
+    display: none;
+}
+
+@keyframes up{
+    from{height: 0;}
+    to{height: 100%;}
+}
+
+.dropup_tel_perso{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    bottom: 90%;
+    right: 25%;
+    animation: up .3s ;
+    display: none;
+}
+
+.dropup_tel{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    bottom: 90%;
+    right: 1%;
+    animation: up .3s ;
+    display: none;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/repas.css">
+    <script src="javascript/index.js"></script>
+    <title>DC | Accueil</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1 onclick="ChangePage('accueil')">.DC</h1>
+            <ul>
+                <li onclick="ChangePage('accueil')">Accueil</li>
+                <li onclick="ChangePage('accueil')">Présentation</li>
+                <li onclick="ChangePage('reserv_repas')">Réservation repas</li>
+                <li onclick="ChangePage('reserv_salle')">Réservation de salle</li>
+            </ul>
+        </header>
+        <div id="overlay2">
+            <div class="recap_container">
+                <div class="recap_bloc">
+                        <h1>Recap</h1>
+                        <fieldset>
+                            <legend>Entrée</legend>
+                            <p id="entre_txt_recap"></p>
+                            <p id="entre_prix_recap"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Plats</legend>
+                            <p id="plats_txt_recap"></p>
+                            <p id="plats_prix_recap"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Boissons</legend>
+                            <p id="drink_txt_recap"></p>
+                            <p id="drink_prix_recap"></p>
+                        </fieldset>
+                        <div class="valid_btn">
+                            <p id="total_recap">Total :</p>
+                            <button>Payer</button>
+                            <button id="test" onclick="OverlayOff()">Annuler</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="reservation_repas">
+                <div class="reservation_repas_container">
+                    <div class="entree">
+                        <fieldset>
+                            <legend>Entrée</legend>
+                            <div class="entre_img">
+                                
+                            </div>
+                            <div class="text">
+                                <ul class="a">
+                                    <li>Planche apéro à partager</li>
+                                    <li>Sardinade adobo</li>
+                                    <li>Tapenade maison</li>
+                                    <li>Terrine et compotée d’oignons</li>
+                                    <li>Tomates, mozzarella et basilic</li>
+                                    <li>Crispy chicken</li>
+                                    <li>Dentelle de charcuterie à partager</li>
+                                    <li>Saumon fumé à partager</li>
+                                </ul>
+                                <ul class="b">
+                                    <li class="ba">10.50 €</li>
+                                    <li class="ba">4.20 €</li>
+                                    <li class="ba">4.20 €</li>
+                                    <li class="ba">5.20 €</li>
+                                    <li class="ba">5.50 €</li>
+                                    <li class="ba">5.90 €</li>
+                                    <li class="ba">8.50 €</li>
+                                    <li class="ba">8.50 €</li>
+                                </ul>
+                                <ul class="checkbox">
+                                    <button type="button" value="Planche apéro à partager" onclick="test(this.value, '10.50 €')">Choisir</button>
+                                    <button type="button" value="Sardinade adobo" onclick="test(this.value, '4.20 €')">Choisir</button>
+                                    <button type="button" value="Tapenade maison" onclick="test(this.value, '4.20 €')">Choisir</button>
+                                    <button type="button" value="Terrine et compotée d’oignons" onclick="test(this.value, '5.20 €')">Choisir</button>
+                                    <button type="button" value="Tomates, mozzarella et basilic" onclick="test(this.value, '5.50 €')">Choisir</button>
+                                    <button type="button" value="Crispy chicken" onclick="test(this.value, '5.90 €')">Choisir</button>
+                                    <button type="button" value="Dentelle de charcuterie à partager" onclick="test(this.value, '8.50€')">Choisir</button>
+                                    <button type="button" value="Saumon fumé à partager" onclick="test(this.value, '8.50€')">Choisir</button>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="Plats">
+                        <fieldset>
+                            <legend>Plats</legend>
+                            <div class="plats_img">
+                                
+                            </div>
+                            <div class="text">
+                                <ul class="a">
+                                    <li>Aiguillettes de poulet</li>
+                                    <li>Aiguillettes de canard</li>
+                                    <li>Filet mignon de porc</li>
+                                    <li>Aloyau de bœuf</li>
+                                    <li>Mixte viande</li>
+                                    <li>Cœur de rumsteck de bœuf</li>
+                                    <li>Onglet de veau</li>
+                                    <li>Royal mixte viande</li>
+                                </ul>
+                                <ul class="b">
+                                    <li class="ba">13.50 €</li>
+                                    <li class="ba">15.70 €</li>
+                                    <li class="ba">15.70 €</li>
+                                    <li class="ba">15.70 €</li>
+                                    <li class="ba">16.20 €</li>
+                                    <li class="ba">16.70 €</li>
+                                    <li class="ba">17.30 €</li>
+                                    <li class="ba">18.60 €</li>
+                                </ul>
+                                <ul class="checkbox">
+                                    <button type="button" value="AIGUILLETTES DE POULET" onclick="test2(this.value, '13.50 €')">Choisir</button>
+                                    <button type="button" value="AIGUILLETTES DE CANARD" onclick="test2(this.value, '15.70 €')">Choisir</button>
+                                    <button type="button" value="FILET MIGNON DE PORC" onclick="test2(this.value, '15.70 €')">Choisir</button>
+                                    <button type="button" value="ALOYAU DE BŒUF" onclick="test2(this.value,'15.70 €')">Choisir</button>
+                                    <button type="button" value="MIXTE VIANDE" onclick="test2(this.value, '16.20 €')">Choisir</button>
+                                    <button type="button" value="CŒUR DE RUMSTECK DE BŒUF" onclick="test2(this.value, '16.70 €')">Choisir</button>
+                                    <button type="button" value="ONGLET DE VEAU" onclick="test2(this.value, '17.30 €')">Choisir</button>
+                                    <button type="button" value="ROYAL MIXTE VIANDE" onclick="test2(this.value, '18.60 €')">Choisir</button>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="boissons">
+                        <fieldset>
+                            <legend>boissons</legend>
+                            <div class="boissons_img">
+                                
+                            </div>
+                            <div class="text">
+                                <ul class="a">
+                                    <li>Ricard</li>
+                                    <li>Rhum</li>
+                                    <li>Whisky Wiliam Lawson</li>
+                                    <li>Whisky Jack Daniels</li>
+                                    <li>Bourbon Wild Turquey</li>
+                                    <li>Vodka Absolut</li>
+                                    <li>Gin</li>
+                                    <li>Martini</li>
+                                </ul>
+                                <ul class="b">
+                                    <li class="ba">2,50 €</li>
+                                    <li class="ba">4,00 €</li>
+                                    <li class="ba">4.00 €</li>
+                                    <li class="ba">5.00 €</li>
+                                    <li class="ba">5.50 €</li>
+                                    <li class="ba">4.90 €</li>
+                                    <li class="ba">3.50 €</li>
+                                    <li class="ba">4.50 €</li>
+                                </ul>
+                                <ul class="checkbox" class="checkmark">
+                                    <button value="Ricard"  onclick="ChoixBoissons(this.value, '2,50 €')">Choisir</button>
+                                    <button value="Rhum"  onclick="ChoixBoissons(this.value, '4,00 €')">Choisir</button>
+                                    <button value="Whisky Wiliam Lawson"  onclick="ChoixBoissons(this.value, '4.00 €')">Choisir</button>
+                                    <button value="Whisky Jack Daniels"  onclick="ChoixBoissons(this.value, '5.00 €')">Choisir</button>
+                                    <button value="Bourbon Wild Turquey"  onclick="ChoixBoissons(this.value, '5.50 €')">Choisir</button>
+                                    <button value="Vodka Absolut"  onclick="ChoixBoissons(this.value , '4.90 €')">Choisir</button>
+                                    <button value="Gin"  onclick="ChoixBoissons(this.value, '3.50 €')">Choisir</button>
+                                    <button value="Martini"  onclick="ChoixBoissons(this.value , '4.50 €')">Choisir</button>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="panier">
+                <h1>Panier</h1>
+                <fieldset>
+                    <legend>Entrée</legend>
+                    <p id="entre_txt"></p>
+                    <p id="entre_prix"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Plats</legend>
+                    <p id="plats_txt"></p>
+                    <p id="plats_prix"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Boissons</legend>
+                    <p id="drink_txt"></p>
+                    <p id="drink_prix"></p>
+                </fieldset>
+                <div class="valid_btn">
+                    <p id="total">Total :</p>
+                    <button onclick="OverlayOn()">Valider</button>
+                    <p id="error"></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2021 Maxime, Dylan , Clément
+        </div>
+    </div>
+    
+
+</body>
+</html>

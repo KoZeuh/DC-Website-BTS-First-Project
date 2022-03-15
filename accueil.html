@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\accueil.css">
+    <script src="javascript/index.js"></script>
+    <title>DC | Accueil</title>
+</head>
+<body>
+    
+    <div class="main">
+        <header>
+            <h1 onclick="ChangePage('accueil')">.DC</h1>
+            <ul>
+                <li onclick="ChangePage('accueil')">Accueil</li>
+                <li onclick="on()">Présentation</li>
+                <li onclick="ChangePage('reserv_repas')">Réservation repas</li>
+                <li onclick="ChangePage('reserv_salle')">Réservation de salle</li>
+            </ul>
+        </header>
+        <div id="overlay">
+            <div class="overlay_body">
+                <div class="bloc">
+                    <div class="fermer">
+                        <button class="btn-fermer" onclick="off()">fermer</button>
+                    </div>
+                    
+                    <div class="nom_dc">
+                        <h1>.DC</h1>
+                    </div>
+                    <div class="description">
+                        <p>le groupe DC est spécialisé, depuis 20 ans, dans l’achat et la revente d’immeubles de bureaux.DC a décidé de diversifier ses activités en créant dans son organisation une branche Location et Gestion (LG).</p>
+                    </div>
+                    
+                    <div class="coord">
+                        <div class="dropup_adresse" id="dropup_adresse">
+                            <div class="dropdown-content">
+                                <img src="img/icon_adresse.png">
+                                    <div class="text">
+                                        <p>10 rue des adresses</p>
+                                        <p>59000, Lille</p>
+                                    </div>
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="dropup_mail" id="dropup_mail">
+                            <div class="dropdown-content">
+                                <img src="img/icon_mail.png">
+                                    <div class="text">
+                                        <p>dc@dc.com</p>
+                                    </div>
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="dropup_tel_perso" id="dropup_tel_perso">
+                            <div class="dropdown-content">
+                                <img src="img/icon_tel_perso.png">
+                                    <div class="text">
+                                        <p>06 45 78 41 65</p>
+                                    </div>
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="dropup_tel" id="dropup_tel">
+                            <div class="dropdown-content">
+                                <img src="img/icon_tel.png">
+                                    <div class="text">
+                                        <p>03 20 40 60 00</p>
+                                    </div>
+                            </div>
+                            <div class="triangle"></div>
+                        </div>
+                        
+                            <div class="icon" id="adresse" onmouseover="DisplayOverlay('dropup_adresse')" onmouseout="HideOverlay('dropup_adresse')" >
+                                <img src="img/icon_adresse.png" class="eee">
+                            </div>
+                            <div class="icon" id="mail">
+                                <img src="img/icon_mail.png" onmouseover="DisplayOverlay('dropup_mail')" onmouseout="HideOverlay('dropup_mail')">
+                            </div>
+                            <div class="icon" id="tel_perso">
+                                <img src="img/icon_tel_perso.png" onmouseover="DisplayOverlay('dropup_tel_perso')" onmouseout="HideOverlay('dropup_tel_perso')">
+                            </div>
+                            <div class="icon" id="tel">
+                                <img src="img/icon_tel.png" onmouseover="DisplayOverlay('dropup_tel')" onmouseout="HideOverlay('dropup_tel')">
+                            </div>
+                    </div>
+                    
+                    
+                    <div class="title">
+                        <h1>Presentation DC</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_button">
+                <h1>.DC</h1>
+                <h2>Achat et revente d'immeubles de bureaux</h2>
+                <div class="button">
+                    <button onclick="on()">Présentation</button>
+                    <button onclick="ChangePage('reserv_repas')">Réservation repas</button>
+                    <button onclick="ChangePage('reserv_salle')">Réservation de salle</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy; 2021 Maxime, Dylan , Clément</div>
+    </div>
+    
+
+</body>
+</html>
